@@ -21,7 +21,7 @@ import torch.nn as nn
 from functools import partial
 import json
 
-from src.model import Multi_scale_expert_dynamic_Model,ConditionalIDRModel
+from src.model import ConditionalIDRModel
 from torch.optim import AdamW
 from utils.args_config import parse_args
 from utils.data_processing import load_dataset, proteinDataset, kfold_split, collate_fn_batch, CAID3_collate_fn_batch, collect_span_embeddings_from_dataset
