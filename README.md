@@ -39,9 +39,8 @@ python predict_main.py
 ## Project Structure
 
 - `main.py`: Training pipeline
-
 - `predict_main.py`: Testing and inference pipeline
-
 - `environment.yml`: Conda environment configuration
 
-> （注：文档部分内容可能由 AI 生成）
+
+
