@@ -1,7 +1,7 @@
 <!--
  * @Date: 2026-09-28 17:14:14
  * @LastEditors: Sicen Liu
- * @LastEditTime: 2026-09-28 17:17:30
+ * @LastEditTime: 2026-09-28 19:53:20
  * @FilePath: /liusicen/mygithub/HyperIDR/README.md
  * @Description:  
  * @Copyright: © 2025 liusicen@smbu.edu.cn. All rights reserved.
@@ -44,7 +44,7 @@ The six independent test datasets (MXD494, SL329, DISORDER723, CASP, CAID3 Disor
 
 ## Pre-trained models (`./saved_models`)
 
-All model files are bare `state_dict` files. The model is `ConditionalIDRModel` (see `src/model.py`), threshold 0.5.
+<!-- All model files are bare `state_dict` files. The model is `ConditionalIDRModel` (see `src/model.py`), threshold 0.5.
 
 | File | Training set | lr | hidden_size | top_k | pool_size |
 | --- | --- | --- | --- | --- | --- |
@@ -56,7 +56,7 @@ All model files are bare `state_dict` files. The model is `ConditionalIDRModel` 
 | `Disorder-PDB_model.pth` | Train_update_caid3_pdb_bc25 (4,790) | 1e-4 | 256 | 3 | 16 |
 | `Disorder-NOX_model.pth` | DM4229_training (4,229) | 5e-4 | 128 | 7 | 96 |
 
-Common training settings: AdamW (weight_decay 0.01), BCE loss (masked), batch size 4, prompt length 10, λ_orth 0.001 (0.01 for the NOX model).
+Common training settings: AdamW (weight_decay 0.01), BCE loss (masked), batch size 4, prompt length 10, λ_orth 0.001 (0.01 for the NOX model). -->
 
 ## Prediction results (`./predicted_results`)
 
@@ -92,6 +92,6 @@ python predict_main.py
 - `src/`: Model implementation, trainer, evaluation and metrics
 - `utils/`: Argument configuration, data processing and feature encoders
 - `datasets/`: Training datasets (see above)
-- `saved_models/`: Pre-trained model parameters 
+<!-- - `saved_models/`: Pre-trained model parameters  -->
 - `predicted_results/`: Per-residue predictions on the six test sets
 - `environment.yml`: Conda environment configuration
