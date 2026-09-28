@@ -1,7 +1,7 @@
 <!--
  * @Date: 2026-09-28 17:14:14
  * @LastEditors: Sicen Liu
- * @LastEditTime: 2026-09-28 19:53:20
+ * @LastEditTime: 2026-09-28 22:25:55
  * @FilePath: /liusicen/mygithub/HyperIDR/README.md
  * @Description:  
  * @Copyright: © 2025 liusicen@smbu.edu.cn. All rights reserved.
@@ -42,21 +42,6 @@ The six independent test datasets (MXD494, SL329, DISORDER723, CASP, CAID3 Disor
 
 [http://bliulab.net/HyperIDR/](http://bliulab.net/HyperIDR/)
 
-## Pre-trained models (`./saved_models`)
-
-<!-- All model files are bare `state_dict` files. The model is `ConditionalIDRModel` (see `src/model.py`), threshold 0.5.
-
-| File | Training set | lr | hidden_size | top_k | pool_size |
-| --- | --- | --- | --- | --- | --- |
-| `model.pth` | DM4845-globalNR (4,146) — **unified model** | 1e-4 | 128 | 3 | 16 |
-| `SL329_model.pth` | Train_329_bc25 (4,807) | 1e-4 | 128 | 1 | 16 |
-| `CASP_model.pth` | Train_casp_bc25 (4,816) | 1e-4 | 128 | 1 | 16 |
-| `MXD494_model.pth` | Train_494_bc25 (4,556) | 1e-3 | 256 | 3 | 16 |
-| `DISORDER723_model.pth` | Train_723_bc25 (4,273) | 1e-4 | 256 | 1 | 16 |
-| `Disorder-PDB_model.pth` | Train_update_caid3_pdb_bc25 (4,790) | 1e-4 | 256 | 3 | 16 |
-| `Disorder-NOX_model.pth` | DM4229_training (4,229) | 5e-4 | 128 | 7 | 96 |
-
-Common training settings: AdamW (weight_decay 0.01), BCE loss (masked), batch size 4, prompt length 10, λ_orth 0.001 (0.01 for the NOX model). -->
 
 ## Prediction results (`./predicted_results`)
 
