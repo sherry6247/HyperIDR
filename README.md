@@ -1,7 +1,7 @@
 <!--
  * @Date: 2026-09-28 17:14:14
  * @LastEditors: Sicen Liu
- * @LastEditTime: 2026-09-28 22:25:55
+ * @LastEditTime: 2026-09-29 11:56:15
  * @FilePath: /liusicen/mygithub/HyperIDR/README.md
  * @Description:  
  * @Copyright: © 2025 liusicen@smbu.edu.cn. All rights reserved.
@@ -42,7 +42,7 @@ The six independent test datasets (MXD494, SL329, DISORDER723, CASP, CAID3 Disor
 
 [http://bliulab.net/HyperIDR/](http://bliulab.net/HyperIDR/)
 
-
+<!-- 
 ## Prediction results (`./predicted_results`)
 
 Each test-set folder contains two files in the same format:
@@ -50,7 +50,7 @@ Each test-set folder contains two files in the same format:
 - `<Dataset>_model_results.txt` — predictions of the benchmark-specific model
 - `model_results.txt` — predictions of the unified model (`saved_models/model.pth`)
 
-File format: one block per protein (`>id:` header) with per-residue rows `amino-acid<TAB>true_label<TAB>prediction_probability`.
+File format: one block per protein (`>id:` header) with per-residue rows `amino-acid<TAB>true_label<TAB>prediction_probability`. -->
 
 ## Usage
 
@@ -78,5 +78,5 @@ python predict_main.py
 - `utils/`: Argument configuration, data processing and feature encoders
 - `datasets/`: Training datasets (see above)
 <!-- - `saved_models/`: Pre-trained model parameters  -->
-- `predicted_results/`: Per-residue predictions on the six test sets
+<!-- - `predicted_results/`: Per-residue predictions on the six test sets -->
 - `environment.yml`: Conda environment configuration
